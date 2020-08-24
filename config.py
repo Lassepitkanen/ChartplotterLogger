@@ -1,4 +1,5 @@
+buttonState = None
 csvDir = None
-usbPictureDir = None
-mainDelay = 1
-buttonState = 0
+piPictureDir = None
+mainDelay = 0.44
+serverDelay = 2000
