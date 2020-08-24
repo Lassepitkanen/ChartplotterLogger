@@ -6,12 +6,13 @@ today = str(datetime.datetime.now().replace(second=0, microsecond=0))
 
 def createFileRepository():
     setDirectoriesToConfig()
-    createFolders()	
-	
+    createFolders()
+
 def setDirectoriesToConfig():
-    config.csvDir = "data/" + today +"/csv/"
-    config.usbPictureDir = "data/" + today +"/usb_pictures/"
+    time  = today.replace(":", ".")
+    config.csvDir = "data/" + time +"/csv/"
+    config.piPictureDir = "data/" + time +"/pi_pictures/"
 
 def createFolders():
     os.makedirs(config.csvDir)
-    os.makedirs(config.usbPictureDir)
+    os.makedirs(config.piPictureDir)
